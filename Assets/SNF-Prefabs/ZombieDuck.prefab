@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2509266854432291401}
   - component: {fileID: 2509266854444149577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZomDuck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291425}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291429}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291433}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291435}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291439}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291441}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291443}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: R_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291445}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: R_Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,13 +453,14 @@ GameObject:
   - component: {fileID: 387499237107663974}
   - component: {fileID: 1719557416619013955}
   - component: {fileID: 2049802904434262461}
-  m_Layer: 0
-  m_Name: ZombieDuck 1
+  - component: {fileID: 379341514}
+  m_Layer: 9
+  m_Name: ZombieDuck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2509266854432291447
 Transform:
   m_ObjectHideFlags: 0
@@ -558,16 +559,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spawner: {fileID: 0}
-  maxHealth: 100
+  maxHealth: 120
   scoreValue: 10
   sinkSpeed: 2.5
   deathEffectTime: 2
-  deathClip: {fileID: 0}
-  hurtClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 62366b8d2c37a49dca550841c741317f, type: 3}
+  hurtClip: {fileID: 8300000, guid: 1d4840678e677424b8921716c72397ea, type: 3}
   enemyAttack: {fileID: 2049802904434262461}
   enemyMovement: {fileID: 1719557416619013955}
   animator: {fileID: 2509266854440064393}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 379341514}
   capsuleCollider: {fileID: 6793569410885447715}
   hitParticles: {fileID: 6673003696482079191}
   isInvulnerable: 0
@@ -603,6 +604,103 @@ MonoBehaviour:
   timeBetweenAttacks: 1
   attackDamage: 20
   animator: {fileID: 2509266854440064393}
+--- !u!82 &379341514
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2509266854432646743}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8434b04884c414ac6b468e10945685e6,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2509266854432646745
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291449}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -643,7 +741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291451}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: joint8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +772,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291453}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: KEY_bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -705,7 +803,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2509266854432291455}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: L_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -780,6 +878,14 @@ PrefabInstance:
     - target: {fileID: 436706, guid: 1c3a4f54276893240b6224d53f76eef8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19881454, guid: 1c3a4f54276893240b6224d53f76eef8, type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19881454, guid: 1c3a4f54276893240b6224d53f76eef8, type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c3a4f54276893240b6224d53f76eef8, type: 3}
